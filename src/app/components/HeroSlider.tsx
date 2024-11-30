@@ -11,6 +11,7 @@ import 'swiper/css/navigation'
 
 import {Navigation} from 'swiper/modules'
 import Image from 'next/image'
+import {Tooltip} from 'react-tooltip'
 
 export default function HeroSlider() {
   const data = [
@@ -38,6 +39,13 @@ export default function HeroSlider() {
   ]
   return (
     <div className="w-12/12 font-extrabold flex justify-center text-white sm:w-6/12">
+      <Tooltip
+        id="my-tooltip1"
+        content="월 100만원"
+        place="top"
+        style={{color: 'green'}}
+        variant="light"
+      />
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
@@ -58,6 +66,7 @@ export default function HeroSlider() {
             style={{display: 'flex', minHeight: '408px'}}
           >
             <div
+              data-tooltip-id="my-tooltip1"
               className="flex p-2 flex-col h-full bg-white rounded-xl gap-1 items-center justify-center w-80 "
               style={{minHeight: '408px'}}
             >
