@@ -12,3 +12,9 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: white !important;
+  font-size: 32px !important;
+}

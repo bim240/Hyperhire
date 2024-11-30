@@ -1,4 +1,5 @@
 import CardSlider from './components/CardSlider'
+import HeroSlider from './components/HeroSlider'
 import HeroText from './components/HeroText'
 import NavBar from './components/NavBar'
 import SectionLayout from './components/SectionLayout'
@@ -15,8 +16,9 @@ export default function Home() {
       >
         <NavBar />
         <SectionLayout>
-          <div className="flex flex-column align-center justify-between min-w-full min-h-full py-40 sm:flex-row">
+          <div className="flex flex-col align-center justify-between min-w-full min-h-full py-40 gap-4 sm:flex-row">
             <HeroText />
+            <HeroSlider />
           </div>
           <CardSlider />
         </SectionLayout>
