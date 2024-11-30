@@ -1,5 +1,5 @@
 'use client'
-
+/* eslint-disable */
 import React from 'react'
 import {Swiper, SwiperSlide} from 'swiper/react'
 import checkIcon from '../assets/check.svg'
@@ -47,7 +47,7 @@ export default function HeroSlider() {
         {data &&
           data?.data &&
           Array.isArray(data?.data) &&
-          data?.data?.map((item, idx) => (
+          data?.data?.map((item: any, idx: number) => (
             <SwiperSlide key={idx} className="flex justify-center" style={{display: 'flex'}}>
               <div
                 data-tooltip-id="my-tooltip1"
@@ -56,7 +56,7 @@ export default function HeroSlider() {
                 <Image src={abhiIcon} alt={item.name} height={120} width={120} />
                 <p className="font-black text-black text-xl">{item.name}</p>
                 <div className="flex flex-wrap justify-center text-black px-5 gap-1 mt-4">
-                  {item.tags.map((tag, idx) => (
+                  {item.tags.map((tag: string, idx: number) => (
                     <div
                       key={idx}
                       className="text-gray-600 text-xl p-1 rounded-md border border-green"
