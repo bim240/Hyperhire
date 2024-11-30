@@ -21,7 +21,7 @@ export default function NavBar() {
           </div>
           <div className="hidden flex items-center justify-center gap-5 sm:flex">
             <Select options={options} />
-            <p className="text-white font-extrabold"> 해외 개발자 활용 서비스</p>
+            <p className="text-white font-extrabold mt-2"> 해외 개발자 활용 서비스</p>
           </div>
           <div className="hidden flex items-center pr-2 sm:flex">
             <Button className="bg-white text-blue-700 font-extrabold px-4 py-2 rounded">
