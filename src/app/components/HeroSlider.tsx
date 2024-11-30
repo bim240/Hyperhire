@@ -48,15 +48,10 @@ export default function HeroSlider() {
           data?.data &&
           Array.isArray(data?.data) &&
           data?.data?.map((item, idx) => (
-            <SwiperSlide
-              key={idx}
-              className="flex justify-center"
-              style={{display: 'flex', minHeight: '408px'}}
-            >
+            <SwiperSlide key={idx} className="flex justify-center" style={{display: 'flex'}}>
               <div
                 data-tooltip-id="my-tooltip1"
                 className="flex p-2 flex-col h-full bg-white rounded-xl gap-1 items-center justify-center w-80 "
-                style={{minHeight: '408px'}}
               >
                 <Image src={abhiIcon} alt={item.name} height={120} width={120} />
                 <p className="font-black text-black text-xl">{item.name}</p>
